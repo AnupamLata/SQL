@@ -4,6 +4,7 @@ SELECT * FROM products WHERE category != 'Electronics';
 SELECT * FROM products WHERE price  > 1000;
 
 -- Logical Operators:
+SELECT * FROM products WHERE not category = 'Electronics';
 SELECT * FROM products WHERE price < 1000 and category = 'Electronics';
 -- range 
 SELECT * FROM products WHERE price < 1000 and price > 400;
@@ -24,3 +25,5 @@ SELECT * FROM products WHERE sku_code LIKE 'W%';
 SELECT * FROM products WHERE sku_code LIKE '%123%';
 -- FOR SECOND LETTER 
 SELECT * FROM products WHERE sku_code LIKE '_B%'
+
+
